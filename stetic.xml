@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<extension version="1.1" type="plugin" group="system" method="upgrade">
+	<name>Stetic</name>
+	<author>Stetic</author>
+	<creationDate>April 2015</creationDate>
+	<copyright>(C) 2015 All rights reserved.</copyright>
+	<license>GNU/GPL</license>
+	<authorEmail>hello@stetic.com</authorEmail>
+	<authorUrl>www.stetic.com</authorUrl>
+	<version>1.0</version>
+	<description>This extension brings the Stteic Web Analytics to Joomla and integrates the tracking code on your page. Just go to Extensions > Plugin Manager to configure the plugin. To use it you have to be registered with www.stetic.com.</description>
+	<files>
+		<filename plugin="stetic">stetic.php</filename>
+	</files>
+	<languages>
+	    <language tag="en-GB">en-GB.plg_system_stetic.ini</language>
+	    <language tag="en-GB">en-GB.plg_system_stetic.sys.ini</language>
+	    <language tag="de-DE">de-DE.plg_system_stetic.ini</language>
+	    <language tag="de-DE">de-DE.plg_system_stetic.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params" >
+			<fieldset name="basic">
+			    <field name="enabled" type="list" default="1" label="LABEL_ENABLED" description="DESC_ENABLED">
+					<option value="1">yes</option>
+					<option value="0">no</option>
+			    </field> 
+				<field name="project_token" type="text" label="LABEL_PROJECT_TOKEN" description="DESC_PROJECT_TOKEN"/>
+			    <field name="ignoreadmins" type="list" default="1" label="LABEL_NOADMIN" description="DESC_NOADMIN">
+					<option value="0">no</option>
+					<option value="1">yes</option>
+			    </field> 
+			    <field name="trackuser" type="list" default="0" label="LABEL_USER_DATA" description="DESC_USER_DATA">
+					<option value="0">no</option>
+					<option value="1">yes</option>
+			    </field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
